@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Header + navbar */
+
+.header{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 35px;
+    font-size: 24px;
+    box-shadow: 0px 11px 8px rgba(0,0,0,0.06);
+    font-family: 'Ubuntu Mono', monospace;
+    z-index: 999;
+}
+
+.navbar{
+    display: flex;
+
+}
+
+.header li{
+    list-style: none;
+    padding: 10px 40px;
+    position: relative;
+}
+
+.header li a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.header li a:hover,
+.header li a.active{
+    color: #156660;
+}
+
+.header li a:hover::after,
+.header li a:visited::after{
+    content: "";
+    width: 28%;
+    height: 6%;
+    background-color: #156660;
+    position: absolute;
+    bottom: 17px;
+    left: 40px;
+}
+
+#cart{
+    width: 2vw;
+    height: 4vh;
+}
+
+/* main body */
+#main{
+    background: center /cover no-repeat url("images/main2.jpg");
+    height: 90vh;
+    width: 99vw;
+    display: flex;
+    flex-direction: row;
+
+}
+
+#mainbox{
+    position: relative;
+    left: 3vw;
+    top:8vh;
+}
+#mainbox2{
+    position: relative;
+    right: -45vw;
+    top:2vh;
+    background-color: none;
+}
+
+#mainbox2 button{
+    margin: 0px 21px;
+}
+
+
+#main h3{
+    font-size: 2rem;
+    color: #156660;
+
+}
+#main h1{
+    font-size: 4rem;
+    color: #156660;
+
+}
+#main h2{
+    font-size: 3rem;
+
+}
+#main p{
+    font-size: 1.5rem;
+
+}
+#main button{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    position: relative;
+    top: 2vh;
+    left: 5vw;
+    cursor: pointer;
+    background-color: #d9d6c7;
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.06);
+}
+
+#main button:hover{
+    background-color: white;
+}
+
+#mainbox2 button{
+    box-shadow: none;
+    color: black;
+    font-weight: bold;
+
+}
+
+/* Categories in bag */
+.container{
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: repeat(5,1fr);       /*used to create responsiveness*/
+    grid-gap: 15px;
+    grid-row-gap: 30px;
+
+}
+
+#categories h2{
+    font-family: 'Ubuntu Mono', monospace;
+    font-size:35px;
+    margin: 30px 0px 25px 15px;
+}
+
+.item{
+    background-repeat: no-repeat;
+    box-shadow: 3px 3px 5px #6c7473;
+    height: 30vh;
+    width: 17vw;
+    border-radius: 297px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    opacity: 0.8;
+}
+.item span{
+    font-weight: bolder;
+    color: #000000;
+}
+
+.item:hover{
+    opacity: 1;
+}
+
+#item-1{
+    background-image: url("images/shirts.jpg");
+    background-size: cover;
+}
+#item-2{
+    background-image: url("images/tshirts.jpg");
+    background-size: cover;
+    background-position: -5px -10px;
+}
+#item-3{
+    background-image: url("images/jeans.jpg");
+    background-size: cover;
+    background-position: -17px -50px;
+}
+#item-4{
+    background-image: url("images/trousers.jpg");
+    background-size: cover;
+    background-position: 0px -67px;
+}
+#item-5{
+    background-image: url("images/socks.jpg");
+    background-size: cover;
+    background-position: 5px -24px;
+}
+#item-6{
+    background-image: url("images/shorts.jpg");
+    background-size: cover;
+    background-position: -2px -45px;
+}
+#item-7{
+    background-image: url("images/infant.jpg");
+    background-size: cover;
+    background-position: 0px -35px;
+}
+#item-8{
+    background-image: url("images/blazers.jpg");
+    background-size: cover;
+    background-position: 2px -96px;
+}
+#item-9{
+    background-image: url("images/books.jpg");
+    background-size: cover;
+    background-position: -16px 4px;
+}
+#item-10{
+    background-image: url("images/th.jpg");
+    background-size: cover;
+    background-position: 0px,-14px;
+}
+
+
+/*footer of the website*/
+
+.footer{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    color:black;
+    background: radial-gradient(#fff, #ffd6d6);
+}
+
+.urls{
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.urls li{
+    list-style: none;
+}
+
+.box{
+        
+}
+
+.original{
+    display: flex;
+    flex-direction: row;
+}
+
+.original img{
+    width: 5vw;
+    height: 8vh;
+}
+
+.copyright{
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
